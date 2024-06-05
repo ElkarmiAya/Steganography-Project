@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Text in Image</title>
+    <link rel="stylesheet" href="hide.css">
+</head>
+<body>
+    <header class="header">
+        <img src="Images/logo.png" alt="INPT Logo" class="logo">
+        <h1>Hide Text in Image</h1>
+    </header>
+    <div class="container">
+        <form id="hide-form">
+            <div class="file-input-container">
+                <label for="image" class="custom-file-upload">
+                    📷 Choose an Image
+                </label>
+                <input type="file" id="image" accept="image/*" required>
+            </div>
+            <img id="chosen-image" class="hidden" src="" alt="Chosen Image" width="400" height="400">
+            <textarea id="text-to-hide" placeholder="Enter text to hide " required></textarea>
+            <button type="submit">🔏 Hide Text</button>
+        </form>
+    </div>
+    <script src="hide.js"></script>
+</body>
+</html>
